@@ -2,15 +2,15 @@
 
 A service using Rest API in Java (Spring Boot)
 
-# Endpoint /api/book/v1
+## Endpoint /api/book/v1
 Using serialized RECORD.
 
 
-# Endpoint /api/book/v2
+## Endpoint /api/book/v2
 Using Lombok.
 
 
-# Endpoint /api/book/v3
+## Endpoint /api/book/v3
 Using String with Jackson
 
 
