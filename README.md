@@ -33,9 +33,11 @@ $ ./testeRun.sh
 ## Métricas:
 
 With Lombok:
-![image](https://github.com/zsantana/quarkus-jackon-json-lombok/assets/17239827/30a9c11b-4621-48c4-8d43-6d5409fb4d90)
+![image](https://github.com/zsantana/spring-boot-jackon-json-lombok/assets/17239827/8b86a835-25bb-4c0a-baf2-c75da75960fb)
+
 
 
 without Lombok:
-![image](https://github.com/zsantana/quarkus-jackon-json-lombok/assets/17239827/17c959c0-1222-4b6b-a1c0-21c5a229bb5f)
+![image](https://github.com/zsantana/spring-boot-jackon-json-lombok/assets/17239827/605747ed-e9f7-4938-80ba-78c57fabc49d)
+
 
