@@ -23,17 +23,9 @@ public class BookController {
     @PostMapping("v1")
     public RetornoDTO processar(@RequestBody BookInListDTO bookInListDTO) {
 
-        // log.info("Bookname: {}" , bookInListDTO.bookname());
-        // log.info("Book items:");
-
         StringBuffer sb = new StringBuffer();
 
         bookInListDTO.bookRootBean().bookItems().forEach(book -> {
-            // log.info("  Name: " + book.name());
-            // log.info("  Type: " + book.type());
-            // log.info("  Size: " + book.size());
-            // log.info("  Value: " + book.value());
-
             sb.append(book.name() + book.type() + book.size() + book.value());
         });
 
@@ -46,11 +38,6 @@ public class BookController {
         StringBuffer sb = new StringBuffer();
 
         bookInListDTO.getBookRootBean().getBookItems().forEach(book -> {
-            // log.info("  Name: " + book.name());
-            // log.info("  Type: " + book.type());
-            // log.info("  Size: " + book.size());
-            // log.info("  Value: " + book.value());
-
             sb.append(book.getName() + book.getType() + book.getSize() + book.getValue());
         });
 
@@ -66,15 +53,8 @@ public class BookController {
             ObjectMapper mapper = new ObjectMapper();
             BookInListDTOV2 bookInListDTO = mapper.readValue(jsonString, BookInListDTOV2.class);
             
-            // Log dos dados recebidos
-            // log.info("Bookname: {}", bookInListDTO.getBookname());
-            // log.info("Book items:");
             StringBuilder sb = new StringBuilder();
             bookInListDTO.getBookRootBean().getBookItems().forEach(book -> {
-                // log.info("  Name: {}", book.getName());
-                // log.info("  Type: {}", book.getType());
-                // log.info("  Size: {}", book.getSize());
-                // log.info("  Value: {}", book.getValue());
                 sb.append(book.getName()).append(book.getType()).append(book.getSize()).append(book.getValue());
             });
 
