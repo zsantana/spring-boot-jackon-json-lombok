@@ -45,6 +45,10 @@ $ ./testeRun.sh
 
 ## Métricas:
 
+Command:
+hey -z 10s -T "application/json" -D "./book.json" -m POST http://localhost:8080/api/book/v3
+
+
 With Lombok:
 ![image](https://github.com/zsantana/spring-boot-jackon-json-lombok/assets/17239827/8b86a835-25bb-4c0a-baf2-c75da75960fb)
 
